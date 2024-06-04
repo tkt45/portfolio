@@ -45,6 +45,11 @@
               </a>
             </li>
             <li class="nav__item">
+              <a href="#certifications" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Certifications
+              </a>
+            </li>
+            <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="uil uil-message nav__icon"></i>Contact-Me
               </a>
@@ -605,6 +610,102 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+
+      <!--===================== Certifications =====================-->
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Certifications Section</title>
+          <style>
+              /* Certifications Section */
+              .certifications {
+                  background-color: var(--body-color);
+                  padding: 20px;
+                  max-width: 1200px;
+                  margin: auto;
+              }
+      
+              .certifications h2 {
+                  text-align: center;
+                  margin: 20px 0;
+              }
+      
+              .certificates-container {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 20px;
+                  margin-top: 20px;
+              }
+      
+              .certificate {
+                  background-color: #fff;
+                  border: 1px solid #ddd;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  text-align: center;
+                  padding: 15px;
+                  transition: transform 0.2s;
+              }
+      
+              .certificate img {
+                  width: 100%;
+                  height: auto;
+                  border-bottom: 1px solid #ddd;
+                  margin-bottom: 10px;
+              }
+      
+              .certificate p {
+                  margin: 10px 0;
+                  font-size: 16px;
+                  color: #333;
+              }
+      
+              .certificate:hover {
+                  transform: translateY(-5px);
+              }
+      
+              /* Responsive Design */
+              @media (max-width: 768px) {
+                  .certificates-container {
+                      grid-template-columns: 1fr;
+                  }
+              }
+          </style>
+      </head>
+      <body>
+          <button id="scrollToCertifications">Certifications</button>
+      
+          <section class="certifications" id="certifications">
+              <h2>CERTIFICATES</h2>
+              <div class="certificates-container">
+                  <div class="certificate">
+                      <img src="assets/img/certificate2.png" alt="Certificate 1">
+                  </div>
+                  <div class="certificate">
+                      <img src="assets/img/certificate1.png" alt="Certificate 2">
+                  </div>
+                  <div class="certificate">
+                      <img src="assets/img/certificate3.png" alt="Certificate 3">
+                  </div>
+                  <div class="certificate">
+                      <img src="assets/img/certificate4.png" alt="Certificate 4">
+                  </div>
+              </div>
+          </section>
+      
+          <script>
+              document.getElementById('scrollToCertifications').addEventListener('click', function() {
+                  document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
+              });
+          </script>
+      </body>
+      </html>
+      
+
 
       <!--===================== Contact Me =====================-->
       <section class="contact section" id="contact">
